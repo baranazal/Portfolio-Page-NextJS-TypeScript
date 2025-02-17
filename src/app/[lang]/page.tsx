@@ -29,6 +29,13 @@ export default async function Page({ params }: Props) {
         </div>
       </section>
 
+      {/* Call to Action Buttons - Moved before Skills section */}
+      <section className="mb-20">
+        <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:items-start">
+          <ActionButtons lang={lang} />
+        </div>
+      </section>
+
       {/* Skills Section */}
       <section className="mb-20">
         <h2 className="mb-8 text-2xl font-bold">{dict.sections.skills}</h2>
@@ -91,13 +98,6 @@ export default async function Page({ params }: Props) {
               </ul>
             </div>
           ))}
-        </div>
-      </section>
-
-      {/* Call to Action Buttons - Moved before What I Can Do section */}
-      <section className="mb-20">
-        <div className="flex flex-col items-center justify-center gap-6 sm:flex-row sm:items-start">
-          <ActionButtons lang={lang} />
         </div>
       </section>
 
