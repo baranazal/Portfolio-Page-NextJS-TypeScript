@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { ActionButtons } from '@/components/ActionButtons'
 import { getDictionary } from '@/utils/dictionary'
 import { getLangFromParams } from '@/utils/helpers';
+import { SectionTitle } from '@/components/SectionTitle'
 
 type Props = {
   params: Promise<{ lang: string }> | { lang: string };
@@ -37,8 +38,12 @@ export default async function Page({ params }: Props) {
       </section>
 
       {/* Skills Section */}
-      <section className="mb-20">
-        <h2 className="mb-8 text-2xl font-bold">{dict.sections.skills}</h2>
+      <section id="skills-section" className="py-16">
+        <SectionTitle 
+          title={dict.sections.skills} 
+          lang={lang} 
+          className="mb-8"
+        />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
@@ -102,8 +107,12 @@ export default async function Page({ params }: Props) {
       </section>
 
       {/* What I Can Do Section */}
-      <section id="what-i-can-do" className="mb-20">
-        <h2 className="mb-8 text-2xl font-bold">{dict.sections.whatIDo}</h2>
+      <section id="what-i-can-do" className="py-16">
+        <SectionTitle 
+          title={dict.sections.whatIDo} 
+          lang={lang} 
+          className="mb-8"
+        />
         <div className="grid gap-6 md:grid-cols-2">
           {[
             {
@@ -160,8 +169,12 @@ export default async function Page({ params }: Props) {
       </section>
 
       {/* Achievements Section */}
-      <section className="mb-20">
-        <h2 className="mb-8 text-2xl font-bold">{dict.sections.achievements}</h2>
+      <section id="achievements-section" className="py-16">
+        <SectionTitle 
+          title={dict.sections.achievements} 
+          lang={lang} 
+          className="mb-8"
+        />
         <div className="grid gap-6 md:grid-cols-3">
           {[
             {
@@ -199,8 +212,12 @@ export default async function Page({ params }: Props) {
       </section>
 
       {/* Contact Section */}
-      <section id="contact-section" className="mb-20">
-        <h2 className="mb-8 text-2xl font-bold">{dict.sections.contact}</h2>
+      <section id="contact-section" className="py-16">
+        <SectionTitle 
+          title={dict.sections.contact} 
+          lang={lang} 
+          className="mb-8"
+        />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-5">
           {[
             {
