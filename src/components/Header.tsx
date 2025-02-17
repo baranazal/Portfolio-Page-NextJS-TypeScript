@@ -81,13 +81,16 @@ export const Header = ({ lang }: HeaderProps) => {
               border-gray-200/30 bg-white/10 shadow-lg backdrop-blur-sm
               transition-all duration-[20ms] dark:border-gray-800/30 dark:bg-gray-900/10
               hover:-translate-y-1 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-xl 
-              dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
+              dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10
+              overflow-hidden"
             aria-label="Toggle theme"
           >
             {!isDark ? (
-              <Sun className="h-6 w-6 text-gray-600 transition-all duration-[20ms] group-hover:rotate-90 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
+              <Sun className="h-6 w-6 text-gray-600 transition-all duration-[20ms] 
+                group-hover:animate-spin-slow group-hover:text-blue-500 dark:text-gray-400" />
             ) : (
-              <Moon className="h-6 w-6 text-gray-600 transition-all duration-[20ms] group-hover:-rotate-90 group-hover:scale-110 group-hover:text-blue-500" />
+              <Moon className="h-6 w-6 text-gray-600 transition-all duration-[20ms] 
+                group-hover:animate-spin-slow group-hover:text-blue-500" />
             )}
           </button>
 
@@ -97,11 +100,16 @@ export const Header = ({ lang }: HeaderProps) => {
               border-gray-200/30 bg-white/10 shadow-lg backdrop-blur-sm
               transition-all duration-[20ms] dark:border-gray-800/30 dark:bg-gray-900/10
               hover:-translate-y-1 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-xl 
-              dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
+              dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10
+              overflow-hidden"
             aria-label={`Switch to ${lang === 'en' ? 'ar' : 'en'} language`}
           >
-            <Globe2 className="h-6 w-6 transform text-gray-600 transition-all duration-[20ms] group-hover:rotate-180 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
-            <span className="text-sm font-medium uppercase text-gray-600 dark:text-gray-400">{lang === 'en' ? 'EN' : 'AR'}</span>
+            <Globe2 className="h-6 w-6 transform text-gray-600 transition-all duration-[20ms] 
+              group-hover:animate-spin-slow group-hover:text-blue-500 dark:text-gray-400" />
+            <span className="text-sm font-medium uppercase text-gray-600 transition-all duration-[20ms]
+              group-hover:text-blue-500 dark:text-gray-400">
+              {lang === 'en' ? 'EN' : 'AR'}
+            </span>
           </button>
         </div>
       </nav>

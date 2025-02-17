@@ -18,6 +18,9 @@ const config: Config = {
       transitionDuration: {
         '20': '20ms',
       },
+      animation: {
+        'spin-slow': 'spin 2s linear infinite',
+      },
     },
   },
   plugins: [
