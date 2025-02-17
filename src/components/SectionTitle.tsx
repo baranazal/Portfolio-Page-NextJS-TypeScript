@@ -14,8 +14,8 @@ export function SectionTitle({ title, lang, className }: SectionTitleProps) {
     <div className={cn("relative", className)}>
       <h2 className={cn(
         "text-2xl md:text-3xl font-bold relative inline-block",
-        "before:absolute before:bottom-0",
-        "after:absolute after:bottom-0",
+        "before:absolute before:bottom-[-8px]",
+        "after:absolute after:bottom-[-8px]",
         // Gradient underline effect
         "before:h-[3px] before:bg-gradient-to-r before:from-blue-500 before:to-purple-500",
         // Glowing line effect
@@ -36,14 +36,9 @@ export function SectionTitle({ title, lang, className }: SectionTitleProps) {
         <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           {title}
         </span>
-        {/* Decorative elements */}
+        {/* Decorative elements - removed upper dot, kept only bottom dot */}
         <span className={cn(
-          "absolute -top-1",
-          isRTL ? "-right-3" : "-left-3",
-          "h-2 w-2 rounded-full bg-blue-500"
-        )} />
-        <span className={cn(
-          "absolute -bottom-1",
+          "absolute -bottom-[10px]",
           isRTL ? "-left-3" : "-right-3",
           "h-2 w-2 rounded-full bg-purple-500"
         )} />
