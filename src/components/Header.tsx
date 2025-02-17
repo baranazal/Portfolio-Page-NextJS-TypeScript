@@ -14,7 +14,7 @@ interface HeaderProps {
 
 export const Header = ({ lang }: HeaderProps) => {
   const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
+  const { theme, setTheme, resolvedTheme } = useTheme()
   const router = useRouter()
   const [dict, setDict] = useState<Dictionary | null>(null)
 
@@ -27,6 +27,18 @@ export const Header = ({ lang }: HeaderProps) => {
 
   const fontFamily = lang === 'ar' ? 'font-noto-arabic' : 'font-nunito';
   const isRTL = lang === 'ar';
+
+  const isDark = resolvedTheme === 'dark'
+
+  const toggleTheme = () => {
+    if (theme === 'system') {
+      setTheme(isDark ? 'light' : 'dark')
+    } else if (theme === 'dark') {
+      setTheme('light')
+    } else {
+      setTheme('dark')
+    }
+  }
 
   return (
     <header className={`sticky top-0 z-50 border-b border-gray-200/10 dark:border-gray-800/10 ${fontFamily}`}>
@@ -49,7 +61,7 @@ export const Header = ({ lang }: HeaderProps) => {
 
         <div className="flex items-center gap-2">
           <button
-            onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+            onClick={toggleTheme}
             className="group relative flex h-10 w-10 items-center justify-center rounded-lg border-2 
               border-gray-200/30 bg-white/10 shadow-lg backdrop-blur-sm
               transition-all duration-300 dark:border-gray-800/30 dark:bg-gray-900/10
@@ -57,7 +69,7 @@ export const Header = ({ lang }: HeaderProps) => {
               dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
             aria-label="Toggle theme"
           >
-            {theme === 'dark' ? (
+            {isDark ? (
               <Sun className="h-6 w-6 text-gray-600 transition-all duration-300 group-hover:rotate-90 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
             ) : (
               <Moon className="h-6 w-6 text-gray-600 transition-all duration-300 group-hover:-rotate-90 group-hover:scale-110 group-hover:text-blue-500" />
