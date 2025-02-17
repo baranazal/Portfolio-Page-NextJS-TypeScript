@@ -68,15 +68,19 @@ export function ActionButtons({ lang }: ActionButtonsProps) {
         target="_blank"
         rel="noopener noreferrer"
         className="group relative flex items-center gap-2 rounded-lg border-2 
-          border-gray-200/30 bg-white/10 px-6 py-3 shadow-lg backdrop-blur-sm
-          transition-all duration-300 dark:border-gray-800/30 dark:bg-gray-900/10
-          hover:-translate-y-1 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-xl 
-          dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
+          border-emerald-500/50 bg-gradient-to-r from-emerald-500/10 to-teal-500/10 px-6 py-3 
+          shadow-lg backdrop-blur-sm transition-all duration-300 
+          hover:-translate-y-1 hover:border-teal-500/50 hover:from-emerald-500/20 
+          hover:to-teal-500/20 hover:shadow-xl dark:border-emerald-400/50 
+          dark:from-emerald-400/10 dark:to-teal-400/10 dark:hover:border-teal-400/50 
+          dark:hover:from-emerald-400/20 dark:hover:to-teal-400/20"
       >
-        <FolderGit2 className="h-5 w-5 transform text-gray-600 transition-all duration-300 
-          group-hover:rotate-12 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
-        <span className="font-semibold text-gray-600 transform transition-all duration-300 
-          group-hover:translate-x-1 group-hover:text-blue-500 dark:text-gray-400">
+        <FolderGit2 className="h-5 w-5 transform text-emerald-600 transition-all duration-300 
+          group-hover:rotate-12 group-hover:scale-110 group-hover:text-teal-500 
+          dark:text-emerald-400 dark:group-hover:text-teal-400" />
+        <span className="font-semibold text-emerald-600 transform transition-all duration-300 
+          group-hover:translate-x-1 group-hover:text-teal-500 dark:text-emerald-400 
+          dark:group-hover:text-teal-400">
           {dict.actions.viewProjects}
         </span>
       </Link>
