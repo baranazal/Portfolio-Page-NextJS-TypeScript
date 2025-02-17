@@ -50,7 +50,7 @@ export const Header = ({ lang }: HeaderProps) => {
 
   return (
     <header 
-      className={`sticky top-0 z-50 transition-all duration-300 ${fontFamily}
+      className={`sticky top-0 z-50 transition-all duration-[20ms] ${fontFamily}
         ${scrolled 
           ? 'bg-white/40 backdrop-blur-lg dark:bg-gray-900/40 border-b border-gray-200/10 dark:border-gray-800/10' 
           : 'bg-transparent border-b border-transparent'
@@ -60,17 +60,17 @@ export const Header = ({ lang }: HeaderProps) => {
       <nav className={`mx-auto flex h-16 max-w-7xl items-center justify-between px-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
         <Link 
           href={`/${lang}`} 
-          className={`group flex items-center gap-2 transition-all duration-300 ${isRTL ? 'flex-row-reverse' : ''}`}
+          className={`group flex items-center gap-2 transition-all duration-[20ms] ${isRTL ? 'flex-row-reverse' : ''}`}
         >
-          <div className="transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
+          <div className="transform transition-all duration-[20ms] group-hover:scale-110 group-hover:rotate-6">
             <Code2 className="h-6 w-6 text-blue-500" />
           </div>
           
           <span className="text-xl font-bold relative">
-            <span className="relative inline-block transform transition-all duration-300 group-hover:text-blue-500 group-hover:-translate-y-1">
+            <span className="relative inline-block transform transition-all duration-[20ms] group-hover:text-blue-500 group-hover:-translate-y-1">
               {dict?.brand.name}
             </span>
-            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+            <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-blue-500 transition-all duration-[20ms] group-hover:w-full"></span>
           </span>
         </Link>
 
@@ -79,15 +79,15 @@ export const Header = ({ lang }: HeaderProps) => {
             onClick={toggleTheme}
             className="group relative flex h-10 w-10 items-center justify-center rounded-lg border-2 
               border-gray-200/30 bg-white/10 shadow-lg backdrop-blur-sm
-              transition-all duration-300 dark:border-gray-800/30 dark:bg-gray-900/10
+              transition-all duration-[20ms] dark:border-gray-800/30 dark:bg-gray-900/10
               hover:-translate-y-1 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-xl 
               dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
             aria-label="Toggle theme"
           >
             {!isDark ? (
-              <Sun className="h-6 w-6 text-gray-600 transition-all duration-300 group-hover:rotate-90 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
+              <Sun className="h-6 w-6 text-gray-600 transition-all duration-[20ms] group-hover:rotate-90 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
             ) : (
-              <Moon className="h-6 w-6 text-gray-600 transition-all duration-300 group-hover:-rotate-90 group-hover:scale-110 group-hover:text-blue-500" />
+              <Moon className="h-6 w-6 text-gray-600 transition-all duration-[20ms] group-hover:-rotate-90 group-hover:scale-110 group-hover:text-blue-500" />
             )}
           </button>
 
@@ -95,12 +95,12 @@ export const Header = ({ lang }: HeaderProps) => {
             onClick={() => router.push(`/${lang === 'en' ? 'ar' : 'en'}`)}
             className="group relative flex h-10 w-20 items-center justify-center gap-2 rounded-lg border-2 
               border-gray-200/30 bg-white/10 shadow-lg backdrop-blur-sm
-              transition-all duration-300 dark:border-gray-800/30 dark:bg-gray-900/10
+              transition-all duration-[20ms] dark:border-gray-800/30 dark:bg-gray-900/10
               hover:-translate-y-1 hover:border-blue-500/50 hover:bg-blue-500/10 hover:shadow-xl 
               dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
             aria-label={`Switch to ${lang === 'en' ? 'ar' : 'en'} language`}
           >
-            <Globe2 className="h-6 w-6 transform text-gray-600 transition-all duration-300 group-hover:rotate-180 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
+            <Globe2 className="h-6 w-6 transform text-gray-600 transition-all duration-[20ms] group-hover:rotate-180 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
             <span className="text-sm font-medium uppercase text-gray-600 dark:text-gray-400">{lang === 'en' ? 'EN' : 'AR'}</span>
           </button>
         </div>

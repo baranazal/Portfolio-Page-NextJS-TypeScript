@@ -14,6 +14,7 @@ export default async function LangLayout({ children, params }: LayoutProps) {
 
   return (
     <>
+      <div className="bg-noise" aria-hidden="true" />
       <Header lang={lang} />
       <main className={`flex-grow ${fontFamily}`} dir={direction} lang={lang}>
         {children}

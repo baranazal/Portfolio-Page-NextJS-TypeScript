@@ -15,6 +15,9 @@ const config: Config = {
         nunito: ['var(--font-nunito)', 'sans-serif'],
         'noto-arabic': ['var(--font-noto-arabic)', 'sans-serif'],
       },
+      transitionDuration: {
+        '20': '20ms',
+      },
     },
   },
   plugins: [

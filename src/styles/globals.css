@@ -7,47 +7,144 @@
     font-family: var(--font-nunito), system-ui, sans-serif;
   }
 
-  /* Add smooth transition for theme changes */
   html.dark {
     color-scheme: dark;
   }
 
   body {
-    @apply transition-colors duration-0;
+    @apply transition-colors duration-[20ms];
     background-image: 
-      radial-gradient(at 40% 20%, rgba(79, 70, 229, 0.15) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, rgba(124, 58, 237, 0.15) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(139, 92, 246, 0.15) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(167, 139, 250, 0.15) 0px, transparent 50%),
-      radial-gradient(at 80% 100%, rgba(147, 51, 234, 0.15) 0px, transparent 50%),
-      radial-gradient(at 0% 0%, rgba(192, 132, 252, 0.15) 0px, transparent 50%);
+      /* Geometric pattern */
+      linear-gradient(60deg, rgba(94, 114, 228, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(94, 114, 228, 0.05) 75.5%),
+      linear-gradient(120deg, rgba(94, 114, 228, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(94, 114, 228, 0.05) 75.5%),
+      /* Floating orbs effect */
+      radial-gradient(circle at 20% 35%, rgba(17, 94, 89, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 75% 44%, rgba(45, 206, 137, 0.08) 0%, transparent 50%),
+      /* Dynamic waves */
+      repeating-linear-gradient(45deg, rgba(94, 114, 228, 0.03) 0%, rgba(94, 114, 228, 0.03) 10%, transparent 10%, transparent 50%),
+      repeating-linear-gradient(-45deg, rgba(94, 114, 228, 0.03) 0%, rgba(94, 114, 228, 0.03) 10%, transparent 10%, transparent 50%),
+      /* Base gradient */
+      linear-gradient(180deg, rgba(248, 249, 254, 1) 0%, rgba(252, 252, 255, 1) 100%);
+    background-size: 
+      64px 64px,
+      64px 64px,
+      100% 100%,
+      100% 100%,
+      100px 100px,
+      100px 100px,
+      100% 100%;
+    background-position: 
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0,
+      0 0;
     min-height: 100vh;
     width: 100%;
     position: relative;
     overflow-x: hidden;
-    background-color: white; /* Explicit background color for light mode */
+    background-color: #ffffff;
+    animation: subtleShift 30s ease-in-out infinite;
   }
 
   .dark body {
     background-image: 
-      radial-gradient(at 40% 20%, rgba(79, 70, 229, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 0%, rgba(124, 58, 237, 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 50%, rgba(99, 102, 241, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 50%, rgba(139, 92, 246, 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 100%, rgba(167, 139, 250, 0.2) 0px, transparent 50%),
-      radial-gradient(at 80% 100%, rgba(147, 51, 234, 0.2) 0px, transparent 50%),
-      radial-gradient(at 0% 0%, rgba(192, 132, 252, 0.2) 0px, transparent 50%);
-    background-color: rgb(3, 7, 18); /* Explicit background color for dark mode */
+      /* Geometric pattern */
+      linear-gradient(60deg, rgba(46, 53, 72, 0.4) 25%, transparent 25.5%, transparent 75%, rgba(46, 53, 72, 0.4) 75.5%),
+      linear-gradient(120deg, rgba(46, 53, 72, 0.4) 25%, transparent 25.5%, transparent 75%, rgba(46, 53, 72, 0.4) 75.5%),
+      /* Floating orbs effect */
+      radial-gradient(circle at 20% 35%, rgba(17, 205, 239, 0.12) 0%, transparent 50%),
+      radial-gradient(circle at 75% 44%, rgba(45, 206, 137, 0.12) 0%, transparent 50%),
+      /* Dynamic waves */
+      repeating-linear-gradient(45deg, rgba(46, 53, 72, 0.2) 0%, rgba(46, 53, 72, 0.2) 10%, transparent 10%, transparent 50%),
+      repeating-linear-gradient(-45deg, rgba(46, 53, 72, 0.2) 0%, rgba(46, 53, 72, 0.2) 10%, transparent 10%, transparent 50%),
+      /* Base gradient */
+      linear-gradient(180deg, rgba(17, 23, 35, 1) 0%, rgba(23, 32, 48, 1) 100%);
+    background-size: 
+      64px 64px,
+      64px 64px,
+      100% 100%,
+      100% 100%,
+      100px 100px,
+      100px 100px,
+      100% 100%;
+    background-color: #111723;
+    animation: subtleShiftDark 30s ease-in-out infinite;
   }
 
-  /* Add transitions for common elements that change with theme */
+  @keyframes subtleShift {
+    0% {
+      background-position: 
+        0 0,
+        0 0,
+        0% 0%,
+        100% 0%,
+        0 0,
+        0 0,
+        0 0;
+    }
+    50% {
+      background-position: 
+        32px 32px,
+        -32px -32px,
+        100% 20%,
+        0% 20%,
+        50px 50px,
+        -50px -50px,
+        0 0;
+    }
+    100% {
+      background-position: 
+        0 0,
+        0 0,
+        0% 0%,
+        100% 0%,
+        0 0,
+        0 0,
+        0 0;
+    }
+  }
+
+  @keyframes subtleShiftDark {
+    0% {
+      background-position: 
+        0 0,
+        0 0,
+        0% 0%,
+        100% 0%,
+        0 0,
+        0 0,
+        0 0;
+    }
+    50% {
+      background-position: 
+        32px 32px,
+        -32px -32px,
+        100% 20%,
+        0% 20%,
+        50px 50px,
+        -50px -50px,
+        0 0;
+    }
+    100% {
+      background-position: 
+        0 0,
+        0 0,
+        0% 0%,
+        100% 0%,
+        0 0,
+        0 0,
+        0 0;
+    }
+  }
+
   *, *::before, *::after {
-    @apply transition-colors duration-0;
+    @apply transition-colors duration-[20ms];
   }
 }
 
-/* Add these custom utilities */
 @layer utilities {
   .force-ltr {
     direction: ltr !important;
@@ -56,4 +153,4 @@
   .force-rtl {
     direction: rtl !important;
   }
-} 
+}
