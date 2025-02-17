@@ -14,6 +14,7 @@ interface HeaderProps {
 
 export const Header = ({ lang }: HeaderProps) => {
   const [mounted, setMounted] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
   const { theme, setTheme, resolvedTheme } = useTheme()
   const router = useRouter()
   const [dict, setDict] = useState<Dictionary | null>(null)
@@ -21,6 +22,13 @@ export const Header = ({ lang }: HeaderProps) => {
   useEffect(() => {
     setMounted(true)
     getDictionary(lang as Locale).then(setDict)
+
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20)
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [lang])
 
   if (!mounted || !dict) return null
@@ -41,7 +49,14 @@ export const Header = ({ lang }: HeaderProps) => {
   }
 
   return (
-    <header className={`sticky top-0 z-50 border-b border-gray-200/10 dark:border-gray-800/10 ${fontFamily}`}>
+    <header 
+      className={`sticky top-0 z-50 transition-all duration-300 ${fontFamily}
+        ${scrolled 
+          ? 'bg-white/40 backdrop-blur-lg dark:bg-gray-900/40 border-b border-gray-200/10 dark:border-gray-800/10' 
+          : 'bg-transparent border-b border-transparent'
+        }
+      `}
+    >
       <nav className={`mx-auto flex h-16 max-w-7xl items-center justify-between px-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
         <Link 
           href={`/${lang}`} 
