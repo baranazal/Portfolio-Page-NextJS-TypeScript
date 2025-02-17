@@ -11,6 +11,15 @@ const config = {
     formats: ['image/avif', 'image/webp'],
   },
 
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.alias = {
+        ...config.resolve.alias,
+        'punycode': false,
+      }
+    }
+    return config
+  },
       
   async headers() {
     return [
