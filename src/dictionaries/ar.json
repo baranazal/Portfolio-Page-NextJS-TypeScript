@@ -27,27 +27,27 @@
     "skills": {
       "frontend": {
         "title": "تطوير الواجهات الأمامية",
-        "skills": ["React", "Next.js", "TailwindCSS", "JavaScript", "TypeScript"]
+        "skills": ["ReactJS", "NextJS", "TailwindCSS", "JavaScript", "TypeScript"]
       },
       "backend": {
         "title": "تطوير الخدمات الخلفية",
-        "skills": ["Node.js", "Python", "Django", "FastAPI", "Express"]
+        "skills": ["Node.js", "Python", "Django", "Express"]
+      },
+      "mobile": {
+        "title": "تطوير تطبيقات الهاتف",
+        "skills": ["Flutter", "Dart", "React Native", "Firebase"]
       },
       "database": {
-        "title": "قواعد البيانات",
-        "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+        "title": "إدارة قواعد البيانات",
+        "skills": ["MongoDB","MySQL", "Firebase"]
       },
       "devops": {
-        "title": "DevOps",
-        "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"]
-      },
-      "desktop": {
-        "title": "تطوير سطح المكتب",
-        "skills": ["Electron", "Python GUI", "Windows Forms", "Qt", "GTK"]
+        "title": "هندسة العمليات",
+        "skills": ["Docker", "Jenkins", "Kubernetes", "CI/CD", "Linux"]
       },
       "os": {
         "title": "أنظمة التشغيل",
-        "skills": ["Linux", "Windows", "macOS", "Shell Scripting", "Bash"]
+        "skills": ["Linux", "Windows", "macOS", "Ubuntu", "PowerShell"]
       }
     },
     "achievements": {
@@ -69,9 +69,9 @@
         "title": "تطوير المواقع",
         "description": "تطبيقات ويب مخصصة مبنية بأحدث التقنيات وأفضل الممارسات للحصول على أداء وتجربة مستخدم مثالية"
       },
-      "python": {
-        "title": "برمجة بايثون",
-        "description": "تطوير حلول برمجية باستخدام بايثون لأتمتة المهام ومعالجة البيانات"
+      "mobile": {
+        "title": "تطوير تطبيقات الموبايل",
+        "description": "تطبيقات موبايل متعددة المنصات باستخدام Flutter والتقنيات الحديثة لتجربة سلسة"
       },
       "database": {
         "title": "حلول قواعد البيانات",
@@ -81,12 +81,12 @@
         "title": "تكامل الأنظمة",
         "description": "دمج سلس للأنظمة المختلفة وواجهات البرمجة، لضمان تدفق البيانات والاتصال السلس"
       },
-      "consulting": {
-        "title": "الاستشارات التقنية",
-        "description": "تقديم المشورة التقنية المتخصصة والحلول المناسبة لاحتياجاتك"
+      "cloud": {
+        "title": "هندسة السحابة",
+        "description": "حلول سحابية متخصصة وتصميم معماري للتطبيقات القابلة للتطوير والآمنة والفعالة"
       },
-      "maintenance": {
-        "title": "الصيانة والدعم",
+      "support": {
+        "title": "الدعم التقني",
         "description": "خدمات شاملة للصيانة والتحسين والدعم للحفاظ على أنظمتك تعمل بسلاسة"
       }
     }

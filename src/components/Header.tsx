@@ -60,7 +60,7 @@ export const Header = ({ lang }: HeaderProps) => {
       <nav className={`mx-auto flex h-16 max-w-7xl items-center justify-between px-4 ${isRTL ? 'flex-row-reverse' : ''}`}>
         <Link 
           href={`/${lang}`} 
-          className="group flex items-center gap-2 transition-all duration-300"
+          className={`group flex items-center gap-2 transition-all duration-300 ${isRTL ? 'flex-row-reverse' : ''}`}
         >
           <div className="transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6">
             <Code2 className="h-6 w-6 text-blue-500" />
@@ -74,7 +74,7 @@ export const Header = ({ lang }: HeaderProps) => {
           </span>
         </Link>
 
-        <div className="flex items-center gap-2">
+        <div className={`flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}>
           <button
             onClick={toggleTheme}
             className="group relative flex h-10 w-10 items-center justify-center rounded-lg border-2 

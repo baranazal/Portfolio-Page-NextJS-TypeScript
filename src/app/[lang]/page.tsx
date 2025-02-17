@@ -1,4 +1,4 @@
-import { Code, Database, Layout, Server, Terminal, Monitor, Mail, Github, Phone, Instagram, Trophy, Linkedin } from 'lucide-react'
+import { Code, Database, Layout, Server, Terminal, Monitor, Mail, Github, Phone, Instagram, Trophy, Linkedin, Smartphone } from 'lucide-react'
 import Link from 'next/link'
 import { ActionButtons } from '@/components/ActionButtons'
 import { getDictionary } from '@/utils/dictionary'
@@ -67,9 +67,9 @@ export default async function Page({ params }: Props) {
               skills: dict.skills.devops.skills,
             },
             {
-              title: dict.skills.desktop.title,
-              icon: <Monitor className="h-6 w-6 text-orange-500" />,
-              skills: dict.skills.desktop.skills,
+              title: dict.skills.mobile.title,
+              icon: <Smartphone className="h-6 w-6 text-yellow-500" />,
+              skills: dict.skills.mobile.skills,
             },
             {
               title: dict.skills.os.title,
@@ -121,9 +121,9 @@ export default async function Page({ params }: Props) {
               description: dict.services.web.description
             },
             {
-              title: dict.services.python.title,
+              title: dict.services.mobile.title,
               icon: <Terminal className="h-6 w-6 text-green-500" />,
-              description: dict.services.python.description
+              description: dict.services.mobile.description
             },
             {
               title: dict.services.database.title,
@@ -136,14 +136,14 @@ export default async function Page({ params }: Props) {
               description: dict.services.system.description
             },
             {
-              title: dict.services.consulting.title,
+              title: dict.services.cloud.title,
               icon: <Code className="h-6 w-6 text-red-500" />,
-              description: dict.services.consulting.description
+              description: dict.services.cloud.description
             },
             {
-              title: dict.services.maintenance.title,
+              title: dict.services.support.title,
               icon: <Monitor className="h-6 w-6 text-indigo-500" />,
-              description: dict.services.maintenance.description
+              description: dict.services.support.description
             }
           ].map((item, index) => (
             <div

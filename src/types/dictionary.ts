@@ -16,11 +16,11 @@ export interface Dictionary {
   };
   services: {
     web: { title: string; description: string; };
-    python: { title: string; description: string; };
+    mobile: { title: string; description: string; };
     database: { title: string; description: string; };
     system: { title: string; description: string; };
-    consulting: { title: string; description: string; };
-    maintenance: { title: string; description: string; };
+    cloud: { title: string; description: string; };
+    support: { title: string; description: string; };
   };
   hero: {
     title: string;
@@ -35,9 +35,9 @@ export interface Dictionary {
   skills: {
     frontend: { title: string; skills: string[]; };
     backend: { title: string; skills: string[]; };
+    mobile: { title: string; skills: string[]; };
     database: { title: string; skills: string[]; };
     devops: { title: string; skills: string[]; };
-    desktop: { title: string; skills: string[]; };
     os: { title: string; skills: string[]; };
   };
   achievements: {
