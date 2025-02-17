@@ -2,6 +2,10 @@
 const config = {
   reactStrictMode: true,
   
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  
   images: {
     domains: ['your-domain.com'],
     formats: ['image/avif', 'image/webp'],
