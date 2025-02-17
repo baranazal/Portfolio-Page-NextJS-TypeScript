@@ -73,6 +73,10 @@
         "title": "Mobile Development",
         "description": "Cross-platform mobile applications using Flutter and modern technologies for seamless native experiences."
       },
+      "python": {
+        "title": "Python Automation",
+        "description": "Custom automation solutions and scripts to streamline workflows, process data, and increase operational efficiency."
+      },
       "database": {
         "title": "Database Solutions",
         "description": "Design and implementation of efficient database architectures, optimizations, and data management systems."
@@ -80,10 +84,6 @@
       "system": {
         "title": "System Integration",
         "description": "Seamless integration of different systems and APIs, ensuring smooth data flow and communication."
-      },
-      "cloud": {
-        "title": "Cloud Architecture",
-        "description": "Expert cloud solutions and architecture design for scalable, secure, and efficient applications."
       },
       "support": {
         "title": "Technical Support",

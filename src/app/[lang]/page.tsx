@@ -122,7 +122,7 @@ export default async function Page({ params }: Props) {
             },
             {
               title: dict.services.mobile.title,
-              icon: <Terminal className="h-6 w-6 text-green-500" />,
+              icon: <Smartphone className="h-6 w-6 text-green-500" />,
               description: dict.services.mobile.description
             },
             {
@@ -136,9 +136,9 @@ export default async function Page({ params }: Props) {
               description: dict.services.system.description
             },
             {
-              title: dict.services.cloud.title,
+              title: dict.services.python.title,
               icon: <Code className="h-6 w-6 text-red-500" />,
-              description: dict.services.cloud.description
+              description: dict.services.python.description
             },
             {
               title: dict.services.support.title,

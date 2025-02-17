@@ -26,9 +26,9 @@ export const i18n = {
     services: {
       web: { title: string; description: string; };
       mobile: { title: string; description: string; };
+      python: { title: string; description: string; };
       database: { title: string; description: string; };
       system: { title: string; description: string; };
-      cloud: { title: string; description: string; };
       support: { title: string; description: string; };
     };
     hero: {
