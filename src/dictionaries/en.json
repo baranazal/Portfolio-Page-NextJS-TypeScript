@@ -1,0 +1,93 @@
+{
+    "footer": {
+      "rights": "All rights reserved",
+      "madeWith": "Made with",
+      "and": "and",
+      "in": "in",
+      "country": "Jordan"
+    },
+    "brand": {
+      "name": "Bara Nazal"
+    },
+    "actions": {
+      "hireMe": "Hire Me",
+      "viewProjects": "View My Projects",
+      "viewServices": "View Services"
+    },
+    "hero": {
+      "title": "Bara Nazal",
+      "role": "Web Developer"
+    },
+    "sections": {
+      "skills": "Skills",
+      "whatIDo": "What I Can Do",
+      "achievements": "Achievements",
+      "contact": "Get in Touch"
+    },
+    "skills": {
+      "frontend": {
+        "title": "Frontend Development",
+        "skills": ["React", "Next.js", "TailwindCSS", "JavaScript", "TypeScript"]
+      },
+      "backend": {
+        "title": "Backend Development",
+        "skills": ["Node.js", "Python", "Django", "FastAPI", "Express"]
+      },
+      "database": {
+        "title": "Database Management",
+        "skills": ["MongoDB", "MySQL", "Firebase", "ORM"]
+      },
+      "devops": {
+        "title": "DevOps",
+        "skills": ["Docker", "Jenkins", "CI/CD", "Linux", "Git", "Nginx"]
+      },
+      "desktop": {
+        "title": "Desktop Development",
+        "skills": ["Electron", "Python GUI", "Windows Forms", "Qt", "GTK"]
+      },
+      "os": {
+        "title": "Systems & Tools",
+        "skills": ["Linux", "Windows", "macOS", "Bash", "PowerShell", "Version Control"]
+      }
+    },
+    "achievements": {
+      "projects": {
+        "title": "Projects Completed",
+        "value": "20+"
+      },
+      "clients": {
+        "title": "Happy Clients",
+        "value": "10+"
+      },
+      "experience": {
+        "title": "Years Experience",
+        "value": "2+"
+      }
+    },
+    "services": {
+      "web": {
+        "title": "Web Development",
+        "description": "Design and develop responsive, modern web applications using React, Next.js, and other cutting-edge technologies to create seamless user experiences."
+      },
+      "python": {
+        "title": "Python Automation",
+        "description": "Create efficient Python scripts for task automation, data processing, and system management to streamline your workflow and increase productivity."
+      },
+      "database": {
+        "title": "Database Solutions",
+        "description": "Design and implement robust database architectures using SQL and MongoDB, ensuring optimal data organization and efficient querying capabilities."
+      },
+      "system": {
+        "title": "System Administration",
+        "description": "Provide comprehensive Windows and Linux system administration, including setup, maintenance, and optimization of servers and workstations."
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "Offer expert technical guidance and solutions tailored to your specific needs, helping you make informed decisions about technology implementation."
+      },
+      "maintenance": {
+        "title": "Website Maintenance",
+        "description": "Provide ongoing website maintenance, updates, and support to ensure your digital presence remains secure, up-to-date, and performing optimally."
+      }
+    }
+}

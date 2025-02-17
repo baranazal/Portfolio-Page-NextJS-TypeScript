@@ -1,0 +1,93 @@
+{
+    "footer": {
+      "rights": "جميع الحقوق محفوظة",
+      "madeWith": "صنع بكل",
+      "and": "و",
+      "in": "في",
+      "country": "الأردن"
+    },
+    "brand": {
+      "name": "براء نزال"
+    },
+    "actions": {
+      "hireMe": "تواصل معي",
+      "viewProjects": "عرض المشاريع",
+      "viewServices": "عرض الخدمات"
+    },
+    "hero": {
+      "title": "براء نزال",
+      "role": "مبرمج ومطور ويب"
+    },
+    "sections": {
+      "skills": "المهارات",
+      "whatIDo": "ماذا يمكنني أن أفعل",
+      "achievements": "الإنجازات",
+      "contact": "تواصل معي"
+    },
+    "skills": {
+      "frontend": {
+        "title": "تطوير الواجهات الأمامية",
+        "skills": ["React", "Next.js", "TailwindCSS", "JavaScript", "TypeScript"]
+      },
+      "backend": {
+        "title": "تطوير الخدمات الخلفية",
+        "skills": ["Node.js", "Python", "Django", "FastAPI", "Express"]
+      },
+      "database": {
+        "title": "قواعد البيانات",
+        "skills": ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+      },
+      "devops": {
+        "title": "DevOps",
+        "skills": ["Docker", "Kubernetes", "AWS", "CI/CD", "Linux"]
+      },
+      "desktop": {
+        "title": "تطوير سطح المكتب",
+        "skills": ["Electron", "Python GUI", "Windows Forms", "Qt", "GTK"]
+      },
+      "os": {
+        "title": "أنظمة التشغيل",
+        "skills": ["Linux", "Windows", "macOS", "Shell Scripting", "Bash"]
+      }
+    },
+    "achievements": {
+      "projects": {
+        "title": "المشاريع المنجزة",
+        "value": "50+"
+      },
+      "clients": {
+        "title": "العملاء",
+        "value": "30+"
+      },
+      "experience": {
+        "title": "سنوات الخبرة",
+        "value": "5+"
+      }
+    },
+    "services": {
+      "web": {
+        "title": "تطوير المواقع",
+        "description": "تطبيقات ويب مخصصة مبنية بأحدث التقنيات وأفضل الممارسات للحصول على أداء وتجربة مستخدم مثالية"
+      },
+      "python": {
+        "title": "برمجة بايثون",
+        "description": "تطوير حلول برمجية باستخدام بايثون لأتمتة المهام ومعالجة البيانات"
+      },
+      "database": {
+        "title": "حلول قواعد البيانات",
+        "description": "تصميم وتنفيذ هياكل قواعد البيانات الفعالة وأنظمة إدارة البيانات"
+      },
+      "system": {
+        "title": "تكامل الأنظمة",
+        "description": "دمج سلس للأنظمة المختلفة وواجهات البرمجة، لضمان تدفق البيانات والاتصال السلس"
+      },
+      "consulting": {
+        "title": "الاستشارات التقنية",
+        "description": "تقديم المشورة التقنية المتخصصة والحلول المناسبة لاحتياجاتك"
+      },
+      "maintenance": {
+        "title": "الصيانة والدعم",
+        "description": "خدمات شاملة للصيانة والتحسين والدعم للحفاظ على أنظمتك تعمل بسلاسة"
+      }
+    }
+}
