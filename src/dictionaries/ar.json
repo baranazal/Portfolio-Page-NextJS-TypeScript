@@ -53,15 +53,15 @@
     "achievements": {
       "projects": {
         "title": "المشاريع المنجزة",
-        "value": "50+"
+        "value": "20+"
       },
       "clients": {
         "title": "العملاء",
-        "value": "30+"
+        "value": "10+"
       },
       "experience": {
         "title": "سنوات الخبرة",
-        "value": "5+"
+        "value": "2+"
       }
     },
     "services": {
