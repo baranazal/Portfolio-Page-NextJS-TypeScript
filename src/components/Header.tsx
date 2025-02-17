@@ -69,7 +69,7 @@ export const Header = ({ lang }: HeaderProps) => {
               dark:hover:border-blue-400/50 dark:hover:bg-blue-400/10"
             aria-label="Toggle theme"
           >
-            {isDark ? (
+            {!isDark ? (
               <Sun className="h-6 w-6 text-gray-600 transition-all duration-300 group-hover:rotate-90 group-hover:scale-110 group-hover:text-blue-500 dark:text-gray-400" />
             ) : (
               <Moon className="h-6 w-6 text-gray-600 transition-all duration-300 group-hover:-rotate-90 group-hover:scale-110 group-hover:text-blue-500" />
