@@ -1,4 +1,4 @@
-# Project Title 🎉
+# Portfolio Page 🎉
 
 ## Description 📖
 This project is a Next.js application that provides a robust and scalable solution for building web applications. It leverages modern web technologies to deliver a seamless user experience.
