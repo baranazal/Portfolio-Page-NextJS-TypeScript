@@ -28,7 +28,7 @@
     "skills": {
       "frontend": {
         "title": "Frontend Development",
-        "skills": ["ReactJS", "NextJS", "TailwindCSS", "JavaScript", "TypeScript"]
+        "skills": ["ReactJS", "NextJS", "TailwindCSS", "TypeScript", "JavaScript"]
       },
       "backend": {
         "title": "Backend Development",
@@ -36,19 +36,19 @@
       },
       "mobile": {
         "title": "Mobile Development",
-        "skills": ["Flutter", "Dart", "React Native", "Firebase"]
+        "skills": ["React Native", "Dart", "Flutter"]
       },
       "database": {
         "title": "Database Management",
-        "skills": ["MongoDB", "MySQL", "Firebase"]
+        "skills": ["Firebase", "Supabase", "MySQL", "MongoDB", "PostgreSQL"]
       },
       "devops": {
         "title": "DevOps",
-        "skills": ["Docker", "Jenkins", "Kubernetes", "CI/CD", "Linux"]
+        "skills": ["Docker", "Kubernetes", "Terraform", "CI/CD", "AWS"]
       },
       "os": {
         "title": "Systems & Tools",
-        "skills": ["Linux", "Windows", "macOS", "Ubuntu", "PowerShell"]
+        "skills": ["Linux", "Ubuntu", "Windows", "MacOS", "Bash", "PowerShell"]
       }
     },
     "achievements": {
@@ -58,7 +58,7 @@
       },
       "clients": {
         "title": "Happy Clients",
-        "value": "10+"
+        "value": "12+"
       },
       "experience": {
         "title": "Years Experience",

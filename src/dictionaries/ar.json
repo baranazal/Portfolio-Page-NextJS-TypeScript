@@ -28,7 +28,7 @@
     "skills": {
       "frontend": {
         "title": "تطوير الواجهات الأمامية",
-        "skills": ["ReactJS", "NextJS", "TailwindCSS", "JavaScript", "TypeScript"]
+        "skills": ["ReactJS", "NextJS", "TailwindCSS", "TypeScript", "JavaScript"]
       },
       "backend": {
         "title": "تطوير الخدمات الخلفية",
@@ -36,19 +36,19 @@
       },
       "mobile": {
         "title": "تطوير تطبيقات الهاتف",
-        "skills": ["Flutter", "Dart", "React Native", "Firebase"]
+        "skills": ["React Native", "Dart", "Flutter"]
       },
       "database": {
         "title": "إدارة قواعد البيانات",
-        "skills": ["MongoDB","MySQL", "Firebase"]
+        "skills": ["Firebase", "Supabase", "MySQL", "MongoDB", "PostgreSQL"]
       },
       "devops": {
         "title": "هندسة العمليات",
-        "skills": ["Docker", "Jenkins", "Kubernetes", "CI/CD", "Linux"]
+        "skills": ["Docker", "Kubernetes", "Terraform", "CI/CD", "AWS"]
       },
       "os": {
         "title": "أنظمة التشغيل",
-        "skills": ["Linux", "Windows", "macOS", "Ubuntu", "PowerShell"]
+        "skills": ["Linux", "Ubuntu", "Windows", "MacOS", "Bash", "PowerShell"]
       }
     },
     "achievements": {
@@ -58,7 +58,7 @@
       },
       "clients": {
         "title": "العملاء",
-        "value": "10+"
+        "value": "12+"
       },
       "experience": {
         "title": "سنوات الخبرة",
