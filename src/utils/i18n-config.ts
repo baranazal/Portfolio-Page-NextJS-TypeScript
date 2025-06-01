@@ -22,6 +22,7 @@ export const i18n = {
       hireMe: string;
       viewProjects: string;
       viewServices: string;
+      downloadCV: string;
     };
     services: {
       web: { title: string; description: string; };

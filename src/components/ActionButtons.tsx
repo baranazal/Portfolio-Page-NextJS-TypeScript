@@ -1,6 +1,6 @@
 'use client'
 import { useCallback } from 'react'
-import { FolderGit2, Wrench, MessageSquareMore } from 'lucide-react'
+import { FolderGit2, Wrench, MessageSquareMore, Download } from 'lucide-react'
 import Link from 'next/link'
 import { getDictionary } from '@/utils/dictionary'
 import { useEffect, useState } from 'react'
@@ -82,6 +82,29 @@ export function ActionButtons({ lang }: ActionButtonsProps) {
           group-hover:translate-x-1 group-hover:text-teal-500 dark:text-emerald-400 
           dark:group-hover:text-teal-400">
           {dict.actions.viewProjects}
+        </span>
+      </Link>
+
+      <Link
+        href="/assets/cv.pdf"
+        download="Bara_Nazal_Resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative flex items-center gap-2 rounded-lg border-2 
+          border-amber-500/50 bg-gradient-to-r from-amber-500/10 to-orange-500/10 px-6 py-3 
+          shadow-lg backdrop-blur-sm transition-all duration-300 
+          hover:-translate-y-1 hover:border-orange-500/50 hover:from-amber-500/20 
+          hover:to-orange-500/20 hover:shadow-xl dark:border-amber-400/50 
+          dark:from-amber-400/10 dark:to-orange-400/10 dark:hover:border-orange-400/50 
+          dark:hover:from-amber-400/20 dark:hover:to-orange-400/20"
+      >
+        <Download className="h-5 w-5 transform text-amber-600 transition-all duration-300 
+          group-hover:rotate-12 group-hover:scale-110 group-hover:text-orange-500 
+          dark:text-amber-400 dark:group-hover:text-orange-400" />
+        <span className="font-semibold text-amber-600 transform transition-all duration-300 
+          group-hover:translate-x-1 group-hover:text-orange-500 dark:text-amber-400 
+          dark:group-hover:text-orange-400">
+          {dict.actions.downloadCV || "Download Resume"}
         </span>
       </Link>
 

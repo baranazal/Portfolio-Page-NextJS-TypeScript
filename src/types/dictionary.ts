@@ -13,6 +13,7 @@ export interface Dictionary {
     hireMe: string;
     viewProjects: string;
     viewServices: string;
+    downloadCV: string;
   };
   services: {
     web: { title: string; description: string; };

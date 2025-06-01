@@ -12,7 +12,8 @@
     "actions": {
       "hireMe": "Hire Me",
       "viewProjects": "View My Projects",
-      "viewServices": "View Services"
+      "viewServices": "View Services",
+      "downloadCV": "Download Resume"
     },
     "hero": {
       "title": "Bara Nazal",

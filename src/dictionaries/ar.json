@@ -12,7 +12,8 @@
     "actions": {
       "hireMe": "تواصل معي",
       "viewProjects": "عرض المشاريع",
-      "viewServices": "عرض الخدمات"
+      "viewServices": "عرض الخدمات",
+      "downloadCV": "تحميل السيرة الذاتية"
     },
     "hero": {
       "title": "براء نزال",
