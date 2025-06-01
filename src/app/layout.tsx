@@ -6,11 +6,13 @@ import { Metadata } from 'next';
 const nunito = Nunito({
   subsets: ['latin'],
   variable: '--font-nunito',
+  display: 'swap',
 });
 
 const notoArabic = Noto_Sans_Arabic({
   subsets: ['arabic'],
   variable: '--font-noto-arabic',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
   description: 'Full-stack web developer specializing in React, Next.js, and modern web technologies. Building responsive and scalable web applications.',
   
   // Basic metadata
-  keywords: 'web development, full stack developer, React, Next.js, TypeScript, Node.js, software engineer',
+  keywords: 'DevOps Engineer, Web Development, Full Stack Developer, React, Next.js, TypeScript, Node.js, Software Engineer',
   authors: [{ name: 'Bara Nazal', url: 'https://baranazal.com' }],
   creator: 'Bara Nazal',
   publisher: 'Bara Nazal',
@@ -107,6 +109,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning>
+      <head>
+        <link rel="prefetch" href="/assets/cv.pdf" as="document" />
+      </head>
       <body className={`${nunito.variable} ${notoArabic.variable} font-nunito min-h-screen flex flex-col dark:bg-gray-950 dark:text-white`}>
         <Providers>{children}</Providers>
       </body>

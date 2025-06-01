@@ -1,13 +1,15 @@
 /** @type {import('next').NextConfig} */
 const config = {
   reactStrictMode: true,
+  swcMinify: true,
+  compress: true,
   
   typescript: {
     ignoreBuildErrors: true,
   },
   
   images: {
-    domains: ['your-domain.com'],
+    domains: ['baranazal.com', 'github.com', 'user-attachments.githubusercontent.com', 'raw.githubusercontent.com'],
     formats: ['image/avif', 'image/webp'],
   },
 
@@ -46,6 +48,33 @@ const config = {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin'
           },
+        ],
+      },
+      {
+        source: '/assets/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ],
+      },
+      {
+        source: '/:path*.js',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
+        ],
+      },
+      {
+        source: '/_next/image/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable'
+          }
         ],
       },
     ]
