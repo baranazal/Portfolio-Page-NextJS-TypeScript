@@ -88,7 +88,6 @@ export function ActionButtons({ lang }: ActionButtonsProps) {
       <Link
         href="/assets/cv.pdf"
         download="Bara_Nazal_Resume.pdf"
-        target="_blank"
         rel="noopener noreferrer"
         className="group relative flex items-center gap-2 rounded-lg border-2 
           border-amber-500/50 bg-gradient-to-r from-amber-500/10 to-orange-500/10 px-6 py-3 
