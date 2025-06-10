@@ -87,6 +87,7 @@ export function ActionButtons({ lang }: ActionButtonsProps) {
 
       <a
         href="/assets/Bara_Nazal_Resume.pdf"
+        target="_blank"
         download="Bara_Nazal_Resume.pdf"
         rel="noopener noreferrer"
         className="group relative flex items-center gap-2 rounded-lg border-2 
