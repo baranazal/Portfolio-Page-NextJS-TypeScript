@@ -85,7 +85,7 @@ export function ActionButtons({ lang }: ActionButtonsProps) {
         </span>
       </Link>
 
-      <Link
+      <a
         href="/assets/cv.pdf"
         download="Bara_Nazal_Resume.pdf"
         rel="noopener noreferrer"
@@ -105,7 +105,7 @@ export function ActionButtons({ lang }: ActionButtonsProps) {
           dark:group-hover:text-orange-400">
           {dict.actions.downloadCV || "Download Resume"}
         </span>
-      </Link>
+      </a>
 
       <button
         onClick={scrollToContact}
