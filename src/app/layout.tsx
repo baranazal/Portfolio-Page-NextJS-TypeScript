@@ -110,7 +110,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning>
       <head>
-        <link rel="prefetch" href="/assets/cv.pdf" as="document" />
+        <link rel="prefetch" href="/assets/Bara_Nazal_Resume.pdf" as="document" />
       </head>
       <body className={`${nunito.variable} ${notoArabic.variable} font-nunito min-h-screen flex flex-col dark:bg-gray-950 dark:text-white`}>
         <Providers>{children}</Providers>
